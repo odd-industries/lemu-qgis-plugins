@@ -12,8 +12,8 @@ email=alexis@odd.co
 
 about=This QGIS plugin enables easy and efficient downloading of raster images from Google Earth Engine (GEE), simplifying the integration of global geospatial data into your QGIS projects.
 
-tracker=https://gitlab.com/aleksi_git/download_raster
-repository=https://gitlab.com/aleksi_git/download_raster
+tracker=https://github.com/odd-industries/lemu-qgis-plugins
+repository=https://github.com/odd-industries/lemu-qgis-plugins
 # End of mandatory metadata
 
 # Recommended items:
