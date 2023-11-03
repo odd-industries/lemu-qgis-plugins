@@ -4,11 +4,33 @@
 
 ## Getting started
 
-This QGIS plugin enables easy and efficient downloading of raster images from Google Earth Engine (GEE), simplifying the integration of global geospatial data into your QGIS projects.
+This plugin allows you to download rasters from Google Earth Engine using a shapefile as a region of interest. With this tool, users can select a specific area of interest defined in a shapefile and easily retrieve raster image data. Follow the steps below to use the plugin:
+
+* Install the plugin in QGIS.
+
+* Open QGIS and load your shapefile that defines the region of interest.
+
+* Activate the plugin and select the shapefile as the region of interest.
+
+* Enter the required parameters, such as the date and image type.
+
+* Click 'Download' to obtain the raster data from Google Earth Engine.
+
+This plugin simplifies the extraction of precise and up-to-date geospatial data for your analysis in QGIS. Enjoy using it and explore new opportunities for your geospatial projects!"
+
+## dependencies
+Account valid in https://earthengine.google.com/
+
+Pre installed plugin GEE in QGIS https://plugins.qgis.org/plugins/ee_plugin/ 
 
 
 ## Installation
 Before installing this plugin, it is necessary to pre-install the Google Earth Engine plugin. This plugin will be automatically installed at the time of installing 'download_raster' plugin.
+
+## How to download? (Workflow)
+Once the plugin is installed in QGIS, it makes requests to retrieve dataset information and display it, as well as to generate valid information for downloading.
+
+![Workflow](./img/workflow.png)
 
 
 ## Usage
