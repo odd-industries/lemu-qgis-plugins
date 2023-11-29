@@ -42,7 +42,10 @@ import urllib.request
 import ee
 from .task_download_manager import *
 from .scripts.utils import create_message,get_data_from_catalog,new_windget_config,valid_data,validate_selected_bands
-from pydevd import *
+try:
+    from pydevd import *
+except ImportError:
+    None
 
 
 #--------------------------------

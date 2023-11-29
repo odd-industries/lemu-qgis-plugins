@@ -128,10 +128,4 @@ def validate_selected_bands(self,bands_):
         if self.selected_bands.item(bs).text() == bands_:
             return True
         
-def pre_init_plugin():
-    extlibs = "ext_libs"
-    extra_libs_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__),extlibs)
-        )
-    site.addsitedir(extra_libs_path)
-    pkg_resources.working_set.add_entry(extra_libs_path)
+

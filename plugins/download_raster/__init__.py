@@ -31,18 +31,26 @@ import platform
 
 from .scripts.utils import *
 
-# try:
-#     import retry
-#     import rasterio
-#     import tqdm
-# except Exception as err:
-#     system = platform.system()
-#     if(system == 'Linux'):
+try:
+    import retry
+    import rasterio
+    import tqdm
+except Exception as err:
+    system = platform.system()
+#    if(system == 'Linux'):
         
-#     if(system == 'Windows'):  
-#         install_external_libs()
-#         print(f'{err}')
-     
+    if(system == 'Windows'):  
+        install_external_libs()
+        print(f'{err}')
+        
+def pre_init_plugin():
+    extlibs = "ext_libs"
+    extra_libs_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__),extlibs)
+        )
+    site.addsitedir(extra_libs_path)
+    pkg_resources.working_set.add_entry(extra_libs_path)
+    
 # noinspection PyPep8Naming
 def classFactory(iface):  # pylint: disable=invalid-name
     """Load Download_raster class from file Download_raster.

@@ -21,8 +21,16 @@ This plugin simplifies the extraction of precise and up-to-date geospatial data 
 ## dependencies
 Account valid in https://earthengine.google.com/
 
+### Plugins
+
 Pre installed plugin GEE in QGIS https://plugins.qgis.org/plugins/ee_plugin/ 
 
+### Library
+Retry
+
+Tqdm
+
+rasterio
 
 ## Installation
 Before installing this plugin, it is necessary to pre-install the Google Earth Engine plugin. This plugin will be automatically installed at the time of installing 'download_raster' plugin.
@@ -71,6 +79,7 @@ Once the plugin is installed in QGIS, it makes requests to retrieve dataset info
 
 17.- Cancel download button
 
+## Tipical Errors or Bugs
 
 
 Note: This README is currently under construction. Additional information and details will be added soon. Thank you for your understanding.
